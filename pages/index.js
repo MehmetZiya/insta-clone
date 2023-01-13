@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import Header from '../components/header/Header'
+import Feed from '../components/feed/Feed'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +16,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
-        <h1>Instagram</h1>
+        <Header />
+        <main>
+          <Feed />
+        </main>
       </main>
     </>
   )
